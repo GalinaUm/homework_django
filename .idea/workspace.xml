@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bef82805-8f1a-4626-9632-a9ee1ff13d74" name="Changes" comment="static">
+    <list default="true" id="bef82805-8f1a-4626-9632-a9ee1ff13d74" name="Changes" comment="base">
+      <change afterPath="$PROJECT_DIR$/catalog/templates/includes/inc_menu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/templates/products_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
@@ -261,7 +263,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767530492220</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="base">
+      <option name="closed" value="true" />
+      <created>1767532899689</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1767532899689</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -295,8 +305,8 @@
     <MESSAGE value="contacts" />
     <MESSAGE value="migration contact" />
     <MESSAGE value="media photos" />
-    <MESSAGE value="base" />
     <MESSAGE value="static" />
-    <option name="LAST_COMMIT_MESSAGE" value="static" />
+    <MESSAGE value="base" />
+    <option name="LAST_COMMIT_MESSAGE" value="base" />
   </component>
 </project>
