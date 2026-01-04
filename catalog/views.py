@@ -23,3 +23,7 @@ def contacts(request):
     return render(request, 'contacts.html')
 
 
+def index(request):
+    return render(request, 'base.html')
+
+
