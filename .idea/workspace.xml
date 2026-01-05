@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bef82805-8f1a-4626-9632-a9ee1ff13d74" name="Changes" comment="product_details">
+    <list default="true" id="bef82805-8f1a-4626-9632-a9ee1ff13d74" name="Changes" comment="media image">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/product_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/product_details.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/templates/products_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/products_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/templatetags/my_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templatetags/my_tags.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/image/product/мыло.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/media/image/product/soap.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/image/product/пила.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/media/image/product/pila.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/image/product/помидор.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/media/image/product/pomodoro.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/image/product/че.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/media/image/product/cheburashka.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,19 +57,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python.run.executor": "Run",
-    "Python.views.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/homework__django",
-    "last_opened_file_path": "/Users/marseilleumirzak/PycharmProjects/homework_django/static"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.run.executor&quot;: &quot;Run&quot;,
+    &quot;Python.views.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/homework__django&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/marseilleumirzak/PycharmProjects/homework_django/static&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/catalog" />
     </key>
   </component>
   <component name="RunManager">
@@ -281,7 +285,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767540893743</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="media image">
+      <option name="closed" value="true" />
+      <created>1767603862226</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1767603862226</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -330,6 +342,7 @@
     <MESSAGE value="static" />
     <MESSAGE value="base" />
     <MESSAGE value="ink_menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="ink_menu" />
+    <MESSAGE value="media image" />
+    <option name="LAST_COMMIT_MESSAGE" value="media image" />
   </component>
 </project>

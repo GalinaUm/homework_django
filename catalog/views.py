@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404
 
-from catalog.models import Product
+from catalog.models import Product, Category
 
 
 def home(request):
@@ -34,6 +34,29 @@ def product_details(request, pk):
     product = get_object_or_404(Product, pk=pk)
     context = {"product": product}
     return render(request, 'product_details.html', context)
+
+
+def product_create(request):
+    if request.method == "POST":
+        name = request.POST.get("name")
+        description = request.POST.get("description")
+        category_id = request.POST.get("category")
+        purchase_price = request.POST.get("purchase_price")
+        image = request.FILES.get("image")
+
+        category = get_object_or_404(Category, id=category_id)
+
+        product = Product.objects.create(
+            name=name,
+            description=description,
+            category=category,
+            purchase_price=purchase_price,
+            image=image,
+        )
+        context = {"product": product}
+        return render(request, "catalog/product_details.html", context)
+
+    return render(request, "catalog/product_create.html", {"categories": categories})
 
 
 
