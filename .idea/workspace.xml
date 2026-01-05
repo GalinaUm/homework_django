@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bef82805-8f1a-4626-9632-a9ee1ff13d74" name="Changes" comment="ink_menu">
-      <change afterPath="$PROJECT_DIR$/catalog/templates/product_details.html" afterDir="false" />
+    <list default="true" id="bef82805-8f1a-4626-9632-a9ee1ff13d74" name="Changes" comment="product_details">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/products_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/products_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templatetags/my_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templatetags/my_tags.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/image/product/мыло.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/media/image/product/soap.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/image/product/пила.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/media/image/product/pila.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/image/product/помидор.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/media/image/product/pomodoro.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/image/product/че.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/media/image/product/cheburashka.jpeg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +60,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
-    "Python.run.executor": "Debug",
+    "Python.run.executor": "Run",
+    "Python.views.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "feature/homework__django",
     "last_opened_file_path": "/Users/marseilleumirzak/PycharmProjects/homework_django/static"
@@ -288,7 +292,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/feature/homework_django" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
