@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404
 
+from catalog.forms import ProductForm
 from catalog.models import Product, Category
 
 
@@ -54,9 +55,12 @@ def product_create(request):
             image=image,
         )
         context = {"product": product}
-        return render(request, "catalog/product_details.html", context)
+        return render(request, "product_details.html", context)
 
-    return render(request, "catalog/product_create.html", {"categories": categories})
+    return render(request, "product_create.html", {"form": ProductForm()})
+
+
+
 
 
 
