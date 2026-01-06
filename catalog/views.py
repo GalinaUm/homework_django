@@ -27,7 +27,8 @@ def contacts(request):
 
 
 def products_list(request):
-    products = Product.objects.all()
+    limit, offset = int(request.GET.get('limit', 9)), int(request.GET.get('offset', 0))
+    products = Product.objects.all()[offset:offset+limit]
     context = {"products": products}
     return render(request, 'products_list.html', context)
 
@@ -58,6 +59,9 @@ def product_create(request):
         return render(request, "product_details.html", context)
 
     return render(request, "product_create.html", {"form": ProductForm()})
+
+
+
 
 
 
