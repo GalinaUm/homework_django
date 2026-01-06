@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bef82805-8f1a-4626-9632-a9ee1ff13d74" name="Changes" comment="" />
+    <list default="true" id="bef82805-8f1a-4626-9632-a9ee1ff13d74" name="Changes" comment="media image">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -53,13 +55,20 @@
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;Python.run.executor&quot;: &quot;Run&quot;,
+    &quot;Python.views.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/homework__django&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/marseilleumirzak/PycharmProjects/homework_django/static&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/catalog/templates/catalog" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/catalog" />
     </key>
   </component>
   <component name="RunManager">
@@ -223,7 +232,63 @@
       <option name="project" value="LOCAL" />
       <updated>1767023285001</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="migration contact">
+      <option name="closed" value="true" />
+      <created>1767515121400</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1767515121400</updated>
+    </task>
+    <task id="LOCAL-00017" summary="media photos">
+      <option name="closed" value="true" />
+      <created>1767525110189</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1767525110190</updated>
+    </task>
+    <task id="LOCAL-00018" summary="base">
+      <option name="closed" value="true" />
+      <created>1767526249893</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1767526249893</updated>
+    </task>
+    <task id="LOCAL-00019" summary="static">
+      <option name="closed" value="true" />
+      <created>1767530492220</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1767530492220</updated>
+    </task>
+    <task id="LOCAL-00020" summary="base">
+      <option name="closed" value="true" />
+      <created>1767532899689</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1767532899689</updated>
+    </task>
+    <task id="LOCAL-00021" summary="ink_menu">
+      <option name="closed" value="true" />
+      <created>1767540893743</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1767540893743</updated>
+    </task>
+    <task id="LOCAL-00022" summary="media image">
+      <option name="closed" value="true" />
+      <created>1767603862226</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1767603862226</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -234,7 +299,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/feature/homework_django" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -256,6 +333,11 @@
     <MESSAGE value="commands" />
     <MESSAGE value="contacts" />
     <MESSAGE value="migration contact" />
-    <option name="LAST_COMMIT_MESSAGE" value="migration contact" />
+    <MESSAGE value="media photos" />
+    <MESSAGE value="static" />
+    <MESSAGE value="base" />
+    <MESSAGE value="ink_menu" />
+    <MESSAGE value="media image" />
+    <option name="LAST_COMMIT_MESSAGE" value="media image" />
   </component>
 </project>
