@@ -1,9 +1,8 @@
 from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404
 from django.urls import reverse_lazy
-from django.views.generic import ListView, DetailView, CreateView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView
 
-from catalog.forms import ProductForm
 from catalog.models import Product, Category
 
 
@@ -41,27 +40,11 @@ class ProductCreateView(CreateView):
     fields = ("name", "description", "category", "purchase_price", "image",)
     success_url = reverse_lazy("catalog:products_list")
 
-def product_create(request):
-    if request.method == "POST":
-        name = request.POST.get("name")
-        description = request.POST.get("description")
-        category_id = request.POST.get("category")
-        purchase_price = request.POST.get("purchase_price")
-        image = request.FILES.get("image")
 
-        category = get_object_or_404(Category, id=category_id)
-
-        product = Product.objects.create(
-            name=name,
-            description=description,
-            category=category,
-            purchase_price=purchase_price,
-            image=image,
-        )
-        context = {"product": product}
-        return render(request, "product_detail.html", context)
-
-    return render(request, "product_form.html", {"form": ProductForm()})
+class ProductUpdateView(UpdateView):
+    model = Product
+    fields = ("name", "description", "category", "purchase_price", "image",)
+    success_url = reverse_lazy("catalog:products_list")
 
 
 
