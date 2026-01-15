@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bef82805-8f1a-4626-9632-a9ee1ff13d74" name="Changes" comment="" />
+    <list default="true" id="bef82805-8f1a-4626-9632-a9ee1ff13d74" name="Changes" comment="limit offset">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,17 +52,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Python.run.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/marseilleumirzak/PycharmProjects/homework_django/static&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.run.executor": "Run",
+    "Python.views.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feature/homework__django",
+    "last_opened_file_path": "/Users/marseilleumirzak/PycharmProjects/homework_django/static",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/catalog/templates/catalog" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/catalog" />
     </key>
   </component>
   <component name="RunManager">
@@ -223,7 +234,79 @@
       <option name="project" value="LOCAL" />
       <updated>1767023285001</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="migration contact">
+      <option name="closed" value="true" />
+      <created>1767515121400</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1767515121400</updated>
+    </task>
+    <task id="LOCAL-00017" summary="media photos">
+      <option name="closed" value="true" />
+      <created>1767525110189</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1767525110190</updated>
+    </task>
+    <task id="LOCAL-00018" summary="base">
+      <option name="closed" value="true" />
+      <created>1767526249893</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1767526249893</updated>
+    </task>
+    <task id="LOCAL-00019" summary="static">
+      <option name="closed" value="true" />
+      <created>1767530492220</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1767530492220</updated>
+    </task>
+    <task id="LOCAL-00020" summary="base">
+      <option name="closed" value="true" />
+      <created>1767532899689</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1767532899689</updated>
+    </task>
+    <task id="LOCAL-00021" summary="ink_menu">
+      <option name="closed" value="true" />
+      <created>1767540893743</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1767540893743</updated>
+    </task>
+    <task id="LOCAL-00022" summary="media image">
+      <option name="closed" value="true" />
+      <created>1767603862226</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1767603862226</updated>
+    </task>
+    <task id="LOCAL-00023" summary="product_create">
+      <option name="closed" value="true" />
+      <created>1767696482593</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1767696482593</updated>
+    </task>
+    <task id="LOCAL-00024" summary="limit offset">
+      <option name="closed" value="true" />
+      <created>1767697002215</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1767697002215</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -234,7 +317,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/feature/homework_django" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -256,6 +351,13 @@
     <MESSAGE value="commands" />
     <MESSAGE value="contacts" />
     <MESSAGE value="migration contact" />
-    <option name="LAST_COMMIT_MESSAGE" value="migration contact" />
+    <MESSAGE value="media photos" />
+    <MESSAGE value="static" />
+    <MESSAGE value="base" />
+    <MESSAGE value="ink_menu" />
+    <MESSAGE value="media image" />
+    <MESSAGE value="product_create" />
+    <MESSAGE value="limit offset" />
+    <option name="LAST_COMMIT_MESSAGE" value="limit offset" />
   </component>
 </project>
