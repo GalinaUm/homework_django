@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bef82805-8f1a-4626-9632-a9ee1ff13d74" name="Changes" comment="limit offset">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/product_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/product_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/product_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/product_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,17 +55,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python.run.executor": "Run",
-    "Python.views.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/homework__django",
-    "last_opened_file_path": "/Users/marseilleumirzak/PycharmProjects/homework_django/static",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.run.executor&quot;: &quot;Run&quot;,
+    &quot;Python.views.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/homework__django&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/marseilleumirzak/PycharmProjects/homework_django/static&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static" />
