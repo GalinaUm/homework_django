@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bef82805-8f1a-4626-9632-a9ee1ff13d74" name="Changes" comment="media image">
+    <list default="true" id="bef82805-8f1a-4626-9632-a9ee1ff13d74" name="Changes" comment="limit offset">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -51,16 +52,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Python.run.executor&quot;: &quot;Run&quot;,
-    &quot;Python.views.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/homework__django&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/marseilleumirzak/PycharmProjects/homework_django/static&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.run.executor": "Run",
+    "Python.views.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feature/homework__django",
+    "last_opened_file_path": "/Users/marseilleumirzak/PycharmProjects/homework_django/static",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static" />
@@ -288,7 +290,23 @@
       <option name="project" value="LOCAL" />
       <updated>1767603862226</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="product_create">
+      <option name="closed" value="true" />
+      <created>1767696482593</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1767696482593</updated>
+    </task>
+    <task id="LOCAL-00024" summary="limit offset">
+      <option name="closed" value="true" />
+      <created>1767697002215</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1767697002215</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -338,6 +356,8 @@
     <MESSAGE value="base" />
     <MESSAGE value="ink_menu" />
     <MESSAGE value="media image" />
-    <option name="LAST_COMMIT_MESSAGE" value="media image" />
+    <MESSAGE value="product_create" />
+    <MESSAGE value="limit offset" />
+    <option name="LAST_COMMIT_MESSAGE" value="limit offset" />
   </component>
 </project>
