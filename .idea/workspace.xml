@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bef82805-8f1a-4626-9632-a9ee1ff13d74" name="Changes" comment="views" />
+    <list default="true" id="bef82805-8f1a-4626-9632-a9ee1ff13d74" name="Changes" comment="blog urls">
+      <change afterPath="$PROJECT_DIR$/blog/templates/catalog/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/templates/catalog/blog_confirm_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/templates/catalog/blog_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/templates/catalog/blog_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/templates/catalog/blog_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/templates/catalog/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/templates/catalog/includes/inc_menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,19 +58,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Python.run.executor&quot;: &quot;Run&quot;,
-    &quot;Python.views.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/homework__django&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/marseilleumirzak/PycharmProjects/homework_django/static&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.run.executor": "Run",
+    "Python.views.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feature/homework__django",
+    "last_opened_file_path": "/Users/marseilleumirzak/PycharmProjects/homework_django/blog/templates",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/blog/templates" />
       <recent name="$PROJECT_DIR$/static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -368,7 +378,23 @@
       <option name="project" value="LOCAL" />
       <updated>1768579139978</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="admin">
+      <option name="closed" value="true" />
+      <created>1768581205134</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1768581205134</updated>
+    </task>
+    <task id="LOCAL-00034" summary="blog urls">
+      <option name="closed" value="true" />
+      <created>1768581524738</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1768581524738</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -398,8 +424,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="settings" />
-    <MESSAGE value="startapp" />
     <MESSAGE value="html templates" />
     <MESSAGE value="controllers" />
     <MESSAGE value="readme" />
@@ -423,6 +447,8 @@
     <MESSAGE value="blog" />
     <MESSAGE value="models" />
     <MESSAGE value="views" />
-    <option name="LAST_COMMIT_MESSAGE" value="views" />
+    <MESSAGE value="admin" />
+    <MESSAGE value="blog urls" />
+    <option name="LAST_COMMIT_MESSAGE" value="blog urls" />
   </component>
 </project>
