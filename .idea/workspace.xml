@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bef82805-8f1a-4626-9632-a9ee1ff13d74" name="Changes" comment="limit offset">
-      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/product_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/product_details.html" afterDir="false" />
+    <list default="true" id="bef82805-8f1a-4626-9632-a9ee1ff13d74" name="Changes" comment="product_forms update">
+      <change afterPath="$PROJECT_DIR$/catalog/templates/catalog/product_confirm_delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/includes/inc_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/includes/inc_menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/product_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/product_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/product_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
@@ -19,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -309,7 +311,23 @@
       <option name="project" value="LOCAL" />
       <updated>1767697002215</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="product_forms">
+      <option name="closed" value="true" />
+      <created>1768494105696</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1768494105696</updated>
+    </task>
+    <task id="LOCAL-00026" summary="product_forms update">
+      <option name="closed" value="true" />
+      <created>1768495123635</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1768495123635</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -361,6 +379,8 @@
     <MESSAGE value="media image" />
     <MESSAGE value="product_create" />
     <MESSAGE value="limit offset" />
-    <option name="LAST_COMMIT_MESSAGE" value="limit offset" />
+    <MESSAGE value="product_forms" />
+    <MESSAGE value="product_forms update" />
+    <option name="LAST_COMMIT_MESSAGE" value="product_forms update" />
   </component>
 </project>
