@@ -34,9 +34,3 @@ class Blog(models.Model):
 
     def __str__(self):
         return self.name
-
-
-
-# дата создания,
-# признак публикации (булевое поле),
-# количество просмотров.
