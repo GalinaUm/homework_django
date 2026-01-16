@@ -1,18 +1,24 @@
 from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404
 from django.urls import reverse_lazy
-from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView, TemplateView
 
-from catalog.models import Product, Category
-
-
-def home(request):
-    return render(request, 'home.html')
+from catalog.models import Product, Category, Contact
 
 
-def contacts(request):
+class HomeView(TemplateView):
+    template_name = "home.html"
 
-    if request.method == "POST":
+
+class ContactView(TemplateView):
+    template_name = "contacts.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["contact"] = Contact.objects.first()
+        return context
+
+    def post(self, request, *args, **kwargs):
         name = request.POST.get("name")
         phone = request.POST.get("phone")
         message = request.POST.get("message")
@@ -23,8 +29,6 @@ def contacts(request):
             f'<p>"{message}"</p>'
             f"<p>С вами свяжутся по этому <b>{phone}</b> номеру.</p>"
         )
-
-    return render(request, 'contacts.html')
 
 
 class ProductListView(ListView):
