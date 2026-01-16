@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bef82805-8f1a-4626-9632-a9ee1ff13d74" name="Changes" comment="product_forms delete">
+    <list default="true" id="bef82805-8f1a-4626-9632-a9ee1ff13d74" name="Changes" comment="contacts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/contacts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -334,7 +332,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768545936433</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="contacts">
+      <option name="closed" value="true" />
+      <created>1768548032297</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1768548032297</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -377,7 +383,6 @@
     <MESSAGE value="superuser" />
     <MESSAGE value="fixtures" />
     <MESSAGE value="commands" />
-    <MESSAGE value="contacts" />
     <MESSAGE value="migration contact" />
     <MESSAGE value="media photos" />
     <MESSAGE value="static" />
@@ -389,6 +394,7 @@
     <MESSAGE value="product_forms" />
     <MESSAGE value="product_forms update" />
     <MESSAGE value="product_forms delete" />
-    <option name="LAST_COMMIT_MESSAGE" value="product_forms delete" />
+    <MESSAGE value="contacts" />
+    <option name="LAST_COMMIT_MESSAGE" value="contacts" />
   </component>
 </project>
