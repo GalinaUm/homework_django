@@ -1,7 +1,7 @@
 from django.http import HttpResponse
-from django.shortcuts import render, get_object_or_404
 from django.urls import reverse_lazy, reverse
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView, TemplateView
+from .forms import ProductForm, CategoryForm
 
 from catalog.models import Product, Category, Contact
 
@@ -47,13 +47,13 @@ class ProductDetailView(DetailView):
 
 class ProductCreateView(CreateView):
     model = Product
-    fields = ("name", "description", "category", "purchase_price", "image",)
+    form_class = ProductForm
     success_url = reverse_lazy("catalog:product_list")
 
 
 class ProductUpdateView(UpdateView):
     model = Product
-    fields = ("name", "description", "category", "purchase_price", "image",)
+    form_class = ProductForm
     success_url = reverse_lazy("catalog:product_list")
 
     def get_success_url(self):
@@ -65,6 +65,20 @@ class ProductDeleteView(DeleteView):
     success_url = reverse_lazy("catalog:product_list")
 
 
+class CategoryCreateViews(CreateView):
+    model = Category
+    form_class = CategoryForm
+    template_name = "catalog/category_form.html"
+    success_url = reverse_lazy("catalog:product_list")
+
+class CategoryUpdateViews(UpdateView):
+    model = Category
+    form_class = CategoryForm
+    template_name = "catalog/category_form.html"
+    success_url = reverse_lazy("catalog:category_list")
+
+class CategoryListViews(ListView):
+    model = Category
 
 
 
