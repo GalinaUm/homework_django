@@ -1,18 +1,24 @@
 from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404
-from django.views.generic import ListView
+from django.urls import reverse_lazy, reverse
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView, TemplateView
 
-from catalog.forms import ProductForm
-from catalog.models import Product, Category
-
-
-def home(request):
-    return render(request, 'home.html')
+from catalog.models import Product, Category, Contact
 
 
-def contacts(request):
+class HomeView(TemplateView):
+    template_name = "home.html"
 
-    if request.method == "POST":
+
+class ContactView(TemplateView):
+    template_name = "contacts.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["contact"] = Contact.objects.first()
+        return context
+
+    def post(self, request, *args, **kwargs):
         name = request.POST.get("name")
         phone = request.POST.get("phone")
         message = request.POST.get("message")
@@ -24,46 +30,39 @@ def contacts(request):
             f"<p>С вами свяжутся по этому <b>{phone}</b> номеру.</p>"
         )
 
-    return render(request, 'contacts.html')
-
 
 class ProductListView(ListView):
     model = Product
 
 
-# def products_list(request):
-#     limit, offset = int(request.GET.get('limit', 9)), int(request.GET.get('offset', 0))
-#     products = Product.objects.all()[offset:offset+limit]
-#     context = {"products": products}
-#     return render(request, 'products_list.html', context)
+class ProductDetailView(DetailView):
+    model = Product
 
-def product_details(request, pk):
-    product = get_object_or_404(Product, pk=pk)
-    context = {"product": product}
-    return render(request, 'product_details.html', context)
+    def get_object(self, queryset=None):
+        self.object = super().get_object(queryset)
+        self.object.views_counter += 1
+        self.object.save()
+        return self.object
 
 
-def product_create(request):
-    if request.method == "POST":
-        name = request.POST.get("name")
-        description = request.POST.get("description")
-        category_id = request.POST.get("category")
-        purchase_price = request.POST.get("purchase_price")
-        image = request.FILES.get("image")
+class ProductCreateView(CreateView):
+    model = Product
+    fields = ("name", "description", "category", "purchase_price", "image",)
+    success_url = reverse_lazy("catalog:product_list")
 
-        category = get_object_or_404(Category, id=category_id)
 
-        product = Product.objects.create(
-            name=name,
-            description=description,
-            category=category,
-            purchase_price=purchase_price,
-            image=image,
-        )
-        context = {"product": product}
-        return render(request, "product_details.html", context)
+class ProductUpdateView(UpdateView):
+    model = Product
+    fields = ("name", "description", "category", "purchase_price", "image",)
+    success_url = reverse_lazy("catalog:product_list")
 
-    return render(request, "product_create.html", {"form": ProductForm()})
+    def get_success_url(self):
+        return reverse('catalog:product_details', args=[self.kwargs.get('pk')])
+
+
+class ProductDeleteView(DeleteView):
+    model = Product
+    success_url = reverse_lazy("catalog:product_list")
 
 
 

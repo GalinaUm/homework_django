@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bef82805-8f1a-4626-9632-a9ee1ff13d74" name="Changes" comment="limit offset">
+    <list default="true" id="bef82805-8f1a-4626-9632-a9ee1ff13d74" name="Changes" comment="blog migration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/includes/inc_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/includes/inc_menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,22 +55,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python.run.executor": "Run",
-    "Python.views.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/homework__django",
-    "last_opened_file_path": "/Users/marseilleumirzak/PycharmProjects/homework_django/static",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.run.executor&quot;: &quot;Run&quot;,
+    &quot;Python.views.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/homework__django&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/marseilleumirzak/PycharmProjects/homework_django/blog/templates&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/blog/templates" />
       <recent name="$PROJECT_DIR$/static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/blog/templates/blog" />
+      <recent name="$PROJECT_DIR$/catalog/templates" />
       <recent name="$PROJECT_DIR$/catalog/templates/catalog" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/catalog" />
@@ -306,7 +312,103 @@
       <option name="project" value="LOCAL" />
       <updated>1767697002215</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="product_forms">
+      <option name="closed" value="true" />
+      <created>1768494105696</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1768494105696</updated>
+    </task>
+    <task id="LOCAL-00026" summary="product_forms update">
+      <option name="closed" value="true" />
+      <created>1768495123635</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1768495123635</updated>
+    </task>
+    <task id="LOCAL-00027" summary="product_forms delete">
+      <option name="closed" value="true" />
+      <created>1768545936433</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1768545936433</updated>
+    </task>
+    <task id="LOCAL-00028" summary="contacts">
+      <option name="closed" value="true" />
+      <created>1768548032297</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1768548032297</updated>
+    </task>
+    <task id="LOCAL-00029" summary="product_views_counter">
+      <option name="closed" value="true" />
+      <created>1768574832576</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1768574832576</updated>
+    </task>
+    <task id="LOCAL-00030" summary="blog">
+      <option name="closed" value="true" />
+      <created>1768575343052</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1768575343052</updated>
+    </task>
+    <task id="LOCAL-00031" summary="models">
+      <option name="closed" value="true" />
+      <created>1768576745210</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1768576745210</updated>
+    </task>
+    <task id="LOCAL-00032" summary="views">
+      <option name="closed" value="true" />
+      <created>1768579139977</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1768579139978</updated>
+    </task>
+    <task id="LOCAL-00033" summary="admin">
+      <option name="closed" value="true" />
+      <created>1768581205134</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1768581205134</updated>
+    </task>
+    <task id="LOCAL-00034" summary="blog urls">
+      <option name="closed" value="true" />
+      <created>1768581524738</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1768581524738</updated>
+    </task>
+    <task id="LOCAL-00035" summary="blog templates">
+      <option name="closed" value="true" />
+      <created>1768597298881</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1768597298881</updated>
+    </task>
+    <task id="LOCAL-00036" summary="blog migration">
+      <option name="closed" value="true" />
+      <created>1768714378817</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1768714378817</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -336,20 +438,11 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="start" />
-    <MESSAGE value="start 2" />
-    <MESSAGE value="startproject" />
-    <MESSAGE value="settings" />
-    <MESSAGE value="startapp" />
-    <MESSAGE value="html templates" />
-    <MESSAGE value="controllers" />
     <MESSAGE value="readme" />
     <MESSAGE value=".env .env.sample" />
-    <MESSAGE value="models" />
     <MESSAGE value="superuser" />
     <MESSAGE value="fixtures" />
     <MESSAGE value="commands" />
-    <MESSAGE value="contacts" />
     <MESSAGE value="migration contact" />
     <MESSAGE value="media photos" />
     <MESSAGE value="static" />
@@ -358,6 +451,18 @@
     <MESSAGE value="media image" />
     <MESSAGE value="product_create" />
     <MESSAGE value="limit offset" />
-    <option name="LAST_COMMIT_MESSAGE" value="limit offset" />
+    <MESSAGE value="product_forms" />
+    <MESSAGE value="product_forms update" />
+    <MESSAGE value="product_forms delete" />
+    <MESSAGE value="contacts" />
+    <MESSAGE value="product_views_counter" />
+    <MESSAGE value="blog" />
+    <MESSAGE value="models" />
+    <MESSAGE value="views" />
+    <MESSAGE value="admin" />
+    <MESSAGE value="blog urls" />
+    <MESSAGE value="blog templates" />
+    <MESSAGE value="blog migration" />
+    <option name="LAST_COMMIT_MESSAGE" value="blog migration" />
   </component>
 </project>
