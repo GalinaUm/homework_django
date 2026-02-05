@@ -1,9 +1,9 @@
 from django.db import models
 
 class Category(models.Model):
-    name = models.CharField(max_length=100, verbose_name="Наименование", help_text="Введите наименование категории")
+    name = models.CharField(max_length=100, verbose_name="Наименование",)
     description = models.TextField(
-        verbose_name="Описание", blank=True, null=True, help_text="Введите описание категории"
+        verbose_name="Описание", blank=True, null=True,
     )
 
     class Meta:
@@ -16,27 +16,25 @@ class Category(models.Model):
 
 
 class Product(models.Model):
-    name = models.CharField(max_length=150, verbose_name="Наименование", help_text="Введите наименование продукта")
+    name = models.CharField(max_length=150, verbose_name="Наименование",)
     description = models.TextField(
-        verbose_name="Описание", blank=True, null=True, help_text="Введите описание продукта"
+        verbose_name="Описание", blank=True, null=True,
     )
     image = models.ImageField(
         upload_to="image/product/",
         blank=True,
         null=True,
         verbose_name="Изображение",
-        help_text="Загрузите изображение",
     )
     category = models.ForeignKey(Category, on_delete=models.CASCADE, verbose_name="Категория", related_name="products")
     purchase_price = models.DecimalField(
-        max_digits=10, decimal_places=2, verbose_name="Цена за покупку", help_text="Введите стоимость продукта"
+        max_digits=10, decimal_places=2, verbose_name="Цена за покупку",
     )
     created_at = models.DateTimeField(auto_now_add=True, verbose_name="Дата создания")
     updated_at = models.DateTimeField(auto_now=True, verbose_name="Дата последнего изменения")
 
     views_counter = models.PositiveIntegerField(
         verbose_name="Счетчик просмотров",
-        help_text="Укажите количество просмотров",
         default=0
     )
 
