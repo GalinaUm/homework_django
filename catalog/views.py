@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 from django.urls import reverse_lazy, reverse
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView, TemplateView
+from django.contrib.auth.mixins import LoginRequiredMixin
 from .forms import ProductForm, CategoryForm
 
 from catalog.models import Product, Category, Contact
@@ -35,7 +36,7 @@ class ProductListView(ListView):
     model = Product
 
 
-class ProductDetailView(DetailView):
+class ProductDetailView(LoginRequiredMixin, DetailView):
     model = Product
 
     def get_object(self, queryset=None):
@@ -45,13 +46,13 @@ class ProductDetailView(DetailView):
         return self.object
 
 
-class ProductCreateView(CreateView):
+class ProductCreateView(LoginRequiredMixin, CreateView):
     model = Product
     form_class = ProductForm
     success_url = reverse_lazy("catalog:product_list")
 
 
-class ProductUpdateView(UpdateView):
+class ProductUpdateView(LoginRequiredMixin, UpdateView):
     model = Product
     form_class = ProductForm
     success_url = reverse_lazy("catalog:product_list")
@@ -60,24 +61,24 @@ class ProductUpdateView(UpdateView):
         return reverse('catalog:product_details', args=[self.kwargs.get('pk')])
 
 
-class ProductDeleteView(DeleteView):
+class ProductDeleteView(LoginRequiredMixin, DeleteView):
     model = Product
     success_url = reverse_lazy("catalog:product_list")
 
 
-class CategoryCreateViews(CreateView):
+class CategoryCreateViews(LoginRequiredMixin, CreateView):
     model = Category
     form_class = CategoryForm
     template_name = "catalog/category_form.html"
     success_url = reverse_lazy("catalog:product_list")
 
-class CategoryUpdateViews(UpdateView):
+class CategoryUpdateViews(LoginRequiredMixin, UpdateView):
     model = Category
     form_class = CategoryForm
     template_name = "catalog/category_form.html"
     success_url = reverse_lazy("catalog:category_list")
 
-class CategoryListViews(ListView):
+class CategoryListViews(LoginRequiredMixin, ListView):
     model = Category
 
 
