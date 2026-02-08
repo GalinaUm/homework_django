@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bef82805-8f1a-4626-9632-a9ee1ff13d74" name="Changes" comment="url blog_view">
+    <list default="true" id="bef82805-8f1a-4626-9632-a9ee1ff13d74" name="Changes" comment="login_logout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -58,12 +63,13 @@
     &quot;Python.views.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;feature/homework__django&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/marseilleumirzak/PycharmProjects/homework_django/blog/templates&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/marseilleumirzak/PycharmProjects/homework_django/users&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/users" />
       <recent name="$PROJECT_DIR$/blog/templates" />
       <recent name="$PROJECT_DIR$/static" />
     </key>
@@ -412,7 +418,47 @@
       <option name="project" value="LOCAL" />
       <updated>1768717613413</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="startapp_users">
+      <option name="closed" value="true" />
+      <created>1770270906544</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1770270906544</updated>
+    </task>
+    <task id="LOCAL-00039" summary="users_form">
+      <option name="closed" value="true" />
+      <created>1770275996231</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1770275996232</updated>
+    </task>
+    <task id="LOCAL-00040" summary="users_form_migrations">
+      <option name="closed" value="true" />
+      <created>1770276008796</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1770276008796</updated>
+    </task>
+    <task id="LOCAL-00041" summary="csu">
+      <option name="closed" value="true" />
+      <created>1770276398373</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1770276398373</updated>
+    </task>
+    <task id="LOCAL-00042" summary="login_logout">
+      <option name="closed" value="true" />
+      <created>1770296466845</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1770296466845</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -442,11 +488,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=".env .env.sample" />
-    <MESSAGE value="superuser" />
-    <MESSAGE value="fixtures" />
-    <MESSAGE value="commands" />
-    <MESSAGE value="migration contact" />
     <MESSAGE value="media photos" />
     <MESSAGE value="static" />
     <MESSAGE value="base" />
@@ -467,6 +508,11 @@
     <MESSAGE value="blog templates" />
     <MESSAGE value="blog migration" />
     <MESSAGE value="url blog_view" />
-    <option name="LAST_COMMIT_MESSAGE" value="url blog_view" />
+    <MESSAGE value="startapp_users" />
+    <MESSAGE value="users_form" />
+    <MESSAGE value="users_form_migrations" />
+    <MESSAGE value="csu" />
+    <MESSAGE value="login_logout" />
+    <option name="LAST_COMMIT_MESSAGE" value="login_logout" />
   </component>
 </project>
