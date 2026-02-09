@@ -14,6 +14,24 @@
                         <p class="card-text">Цена: {{object.purchase_price}}</p>
                         <p class="card-text">Создано: {{object.created_at}}</p>
                         <p class="card-text">Изменено: {{object.updated_at}}</p>
+                        <p>Статус:
+                            {% if product.status == 'published' % }
+                            Опубликован
+                            {% else %}
+                            Черновик
+                            {% endif %}
+                        </p>
+
+                        {% if perms.products.can_unpublish_product and product.status == 'published' %}
+                        <a href="{% url 'unpublish_product' product.pk %}">
+                            Снять с публикации
+                        </a>
+                        {% endif %}
+                        {% if perms.products.delete_product %}
+                        <a href="{% url 'delete_product' product.pk%}">
+                            Удалить
+                        </a>
+                        {% endif %}
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
                                 <a class="btn btn-primary" href="{% url 'catalog:product_list' %}"

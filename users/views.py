@@ -1,12 +1,15 @@
 import secrets
+from itertools import product
 
 from django.core.mail import send_mail
 from django.shortcuts import get_object_or_404, redirect
 from django.urls import reverse_lazy, reverse
 from django.views.generic import CreateView
+from django.contrib.auth.decorators import permission_required
 
 from users.forms import UserRegisterForm
 from users.models import User
+from catalog.models import Product
 
 from config.settings import EMAIL_HOST_USER
 
@@ -39,5 +42,16 @@ def email_verification(request, token):
     return redirect(reverse("users:login"))
 
 
+@permission_required('catalog.can_unpublish_product', raise_exception=True)
+def unpublish_product(request, pk):
+    product = get_object_or_404(Product, pk=pk)
+    product.status = Product.DRAFT
+    product.save()
+    return redirect('product_detail', pk=pk)
 
+@permission_required('catalog.delete_product', raise_exception=True)
+def delete_product(request, pk):
+    product = get_object_or_404(Product, pk=pk)
+    product.delete()
+    return redirect('product_list')
 

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bef82805-8f1a-4626-9632-a9ee1ff13d74" name="Changes" comment="product_permission" />
+    <list default="true" id="bef82805-8f1a-4626-9632-a9ee1ff13d74" name="Changes" comment="setup_groups" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -467,7 +467,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770617987083</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="setup_groups">
+      <option name="closed" value="true" />
+      <created>1770619696614</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1770619696614</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -497,7 +505,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="base" />
     <MESSAGE value="ink_menu" />
     <MESSAGE value="media image" />
     <MESSAGE value="product_create" />
@@ -522,6 +529,7 @@
     <MESSAGE value="login_logout" />
     <MESSAGE value="validation" />
     <MESSAGE value="product_permission" />
-    <option name="LAST_COMMIT_MESSAGE" value="product_permission" />
+    <MESSAGE value="setup_groups" />
+    <option name="LAST_COMMIT_MESSAGE" value="setup_groups" />
   </component>
 </project>
