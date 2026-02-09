@@ -16,7 +16,21 @@ class Category(models.Model):
 
 
 class Product(models.Model):
+
+    DRAFT = 'draft'
+    PUBLISHED = 'published'
+
+    STATUS_CHOICES = [
+        (DRAFT, 'Черновик'),
+        (PUBLISHED, 'Опубликован')
+    ]
+
     name = models.CharField(max_length=150, verbose_name="Наименование",)
+    status = models.CharField(
+        max_length=30,
+        choices=STATUS_CHOICES,
+        default=DRAFT
+    )
     description = models.TextField(
         verbose_name="Описание", blank=True, null=True,
     )
@@ -42,6 +56,9 @@ class Product(models.Model):
         verbose_name = "Продукт"
         verbose_name_plural = "Продукты"
         ordering = ["category", "name"]
+        permissions = [
+            ('can_unpublish_product', 'Can unpublish product'),
+        ]
 
     def __str__(self):
         return self.name
