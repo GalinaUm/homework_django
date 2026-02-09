@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bef82805-8f1a-4626-9632-a9ee1ff13d74" name="Changes" comment="setup_groups" />
+    <list default="true" id="bef82805-8f1a-4626-9632-a9ee1ff13d74" name="Changes" comment="perms_in_views_and_templates">
+      <change beforePath="$PROJECT_DIR$/.idea/homework_django.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/homework_django.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/product_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -475,7 +481,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770619696614</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="perms_in_views_and_templates">
+      <option name="closed" value="true" />
+      <created>1770621450375</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1770621450375</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -505,7 +519,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ink_menu" />
     <MESSAGE value="media image" />
     <MESSAGE value="product_create" />
     <MESSAGE value="limit offset" />
@@ -530,6 +543,7 @@
     <MESSAGE value="validation" />
     <MESSAGE value="product_permission" />
     <MESSAGE value="setup_groups" />
-    <option name="LAST_COMMIT_MESSAGE" value="setup_groups" />
+    <MESSAGE value="perms_in_views_and_templates" />
+    <option name="LAST_COMMIT_MESSAGE" value="perms_in_views_and_templates" />
   </component>
 </project>

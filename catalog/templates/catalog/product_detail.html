@@ -15,7 +15,7 @@
                         <p class="card-text">Создано: {{object.created_at}}</p>
                         <p class="card-text">Изменено: {{object.updated_at}}</p>
                         <p>Статус:
-                            {% if product.status == 'published' % }
+                            {% if product.status == 'published' %}
                             Опубликован
                             {% else %}
                             Черновик
@@ -28,7 +28,7 @@
                         </a>
                         {% endif %}
                         {% if perms.products.delete_product %}
-                        <a href="{% url 'delete_product' product.pk%}">
+                        <a href="{% url 'catalog:product_delete' product.pk%}">
                             Удалить
                         </a>
                         {% endif %}
