@@ -15,8 +15,10 @@
                             <div class="btn-group">
                                 <a class="btn btn-primary" href="{% url 'blog:blog_details' blog.pk %}"
                                    role="button">Watch</a>
+                                {% if perms.blog.change_blog %}
                                 <a class="btn btn-primary" href="{% url 'blog:blog_update' blog.pk %}"
                                    role="button">Update</a>
+                                {% endif %}
                                 <a class="btn btn-primary" href="{% url 'blog:blog_delete' blog.pk %}"
                                    role="button">Delete</a>
                             </div>

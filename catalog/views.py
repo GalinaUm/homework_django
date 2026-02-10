@@ -1,8 +1,12 @@
+from itertools import product
+
 from django.http import HttpResponse
 from django.urls import reverse_lazy, reverse
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView, TemplateView
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin, UserPassesTestMixin
+from django.core.exceptions import PermissionDenied
 from .forms import ProductForm, CategoryForm
+
 
 from catalog.models import Product, Category, Contact
 
@@ -51,19 +55,36 @@ class ProductCreateView(LoginRequiredMixin, CreateView):
     form_class = ProductForm
     success_url = reverse_lazy("catalog:product_list")
 
+    def form_valid(self, form):
+        product = form.save()
+        product.owner = self.request.user
+        product.save()
+        return super().form_valid(form)
 
-class ProductUpdateView(LoginRequiredMixin, UpdateView):
+
+class ProductUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Product
     form_class = ProductForm
     success_url = reverse_lazy("catalog:product_list")
+
+    def test_func(self):
+        return self.get_object().owner == self.request.user
 
     def get_success_url(self):
         return reverse('catalog:product_details', args=[self.kwargs.get('pk')])
 
 
-class ProductDeleteView(LoginRequiredMixin, DeleteView):
+class ProductDeleteView(PermissionRequiredMixin, LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     model = Product
+    permission_required = 'catalog:product_delete'
     success_url = reverse_lazy("catalog:product_list")
+
+    def test_func(self):
+        user = self.request.user
+        product = self.get_object()
+        is_owner = product.owner == user
+        is_moderator = user.groups.filter(name='moderator').exists() or user.is_staff
+        return is_owner or is_moderator
 
 
 class CategoryCreateViews(LoginRequiredMixin, CreateView):
