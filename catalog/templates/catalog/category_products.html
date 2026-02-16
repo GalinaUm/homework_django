@@ -1,32 +1,40 @@
 {% extends 'catalog/base.html' %}
-
+{% load my_tags %}
 {% block content %}
-<div class="container">
-    <h1 class="my-4">Продукты категории: {{category.name}}</h1>
+<div class="album py-5 bg-body-tertiary">
 
-    <div class="row">
-        {% for product in products %}
-        <div class="col-md-4 mb-4">
-            <div class="card h-100">
-                {% if product.image %}
-                <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
-                {% endif %}
-                <div class="card-body">
-                    <h5 class="card-title">{{ product.name }}</h5>
-                    <p class="card-text">{{ product.description|truncatechars:100 }}</p>
-                </div>
-                <div class="card-footer">
-                    <span class="text-muted">Цена: {{product.purchase_price}} руб.</span>
+    <div class="container">
+        <h1 class="mb-4">Категории продуктов</h1>
+        <h1>{{ category.name_category }}</h1>
+        <p>Найдено товаров: {{products.count}}</p>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            {% for product in products %}
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="{{ product.image_product | media_filter }}"
+                                    alt="{{ product.name_product }}"
+                                    class="card-img-top"
+                                    style="height: 350px; width: 100%; object-fit: cover;">
+
+                    <div class="card-body">
+                        <p class="card-text">
+                        <h5>{{ product.name_product }}</h5>
+                        <p class="card-text">Цена: {{ product.price_product }} ₽</p>
+                        <a>{{ product.description_product|truncatechars:100 }}</a>
+                        <p>Владелец: {{product.owner.username|default:"Не указан"}}</p>
+                        {% if product.owner == user %}
+                            <span class="badge bg-success ms-2">Мой продукт</span>
+                        {% endif %}
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a class="btn btn-primary" href="{% url 'catalog:product_details' product.pk %}" role="button">Посмотреть</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            {% endfor %}
         </div>
-        {% empty %}
-        <div class="col-12">
-            <p>В этой категории пока нет опубликованных продуктов.</p>
-        </div>
-        {% endfor %}
     </div>
-
-    <a href="{% url 'catalog:category_list' %}" class="btn btn-secondary mt-3">Назад к категориям</a>
 </div>
 {% endblock %}

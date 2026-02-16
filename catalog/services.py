@@ -1,5 +1,3 @@
-from itertools import product
-
 from django.conf import settings
 from django.core.cache import cache
 
@@ -28,11 +26,11 @@ class ProductService:
     def get_products_by_category(category_pk):
         """Возвращает кэшированный список продуктов для конкретной категории"""
         if not settings.CACHE_ENABLE:
-            return Product.objects.filter(category_id=category_pk, status=Product.PUBLISHED)
+            return Product.objects.filter(category_id=category_pk)
         key = f'products_category_{category_pk}'
         products = cache.get(key)
         if products is None:
-            products = Product.objects.filter(status=Product.PUBLISHED)
+            products = Product.objects.filter(category_id=category_pk)
             cache.set(key, products, 60 * 15)
         return products
 

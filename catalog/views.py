@@ -46,7 +46,6 @@ class ProductListView(ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        # Добавляем все категории в контекст
         context['categories'] = Category.objects.all()
         return context
 
@@ -113,6 +112,8 @@ class CategoryUpdateViews(LoginRequiredMixin, UpdateView):
 
 class CategoryListViews(LoginRequiredMixin, ListView):
     model = Category
+    template_name = 'catalog/category_list.html'
+
 
 
 class CategoryProductListView(ListView):
