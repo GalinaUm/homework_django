@@ -1,6 +1,7 @@
 from itertools import product
 
 from django.http import HttpResponse
+from django.shortcuts import get_object_or_404
 from django.urls import reverse_lazy, reverse
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView, TemplateView
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin, UserPassesTestMixin
@@ -9,6 +10,7 @@ from .forms import ProductForm, CategoryForm
 
 
 from catalog.models import Product, Category, Contact
+from .services import ProductService
 
 
 class HomeView(TemplateView):
@@ -38,6 +40,15 @@ class ContactView(TemplateView):
 
 class ProductListView(ListView):
     model = Product
+
+    def get_queryset(self):
+        return ProductService.get_products_from_caches()
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['categories'] = Category.objects.all()
+        return context
+
 
 
 class ProductDetailView(LoginRequiredMixin, DetailView):
@@ -101,6 +112,25 @@ class CategoryUpdateViews(LoginRequiredMixin, UpdateView):
 
 class CategoryListViews(LoginRequiredMixin, ListView):
     model = Category
+    template_name = 'catalog/category_list.html'
+
+
+
+class CategoryProductListView(ListView):
+    model = Product
+    template_name = 'catalog/category_products.html'
+    context_object_name = 'products'
+
+    def get_queryset(self):
+        category_pk = self.kwargs.get('pk')
+        return ProductService.get_products_by_category(category_pk)
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        from .models import Category
+        context['category'] = get_object_or_404(Category, pk=self.kwargs.get('pk'))
+        return context
+
 
 
 

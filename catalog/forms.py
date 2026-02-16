@@ -7,7 +7,7 @@ from catalog.models import Product, Category
 class CategoryForm(ModelForm):
     class Meta:
         model = Category
-        fields = ["name", "description"]
+        fields = ["id", "name", "description"]
 
 
 class ProductForm(ModelForm):

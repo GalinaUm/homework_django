@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bef82805-8f1a-4626-9632-a9ee1ff13d74" name="Changes" comment="python_3_12_repair">
+    <list default="true" id="bef82805-8f1a-4626-9632-a9ee1ff13d74" name="Changes" comment="product_category_html">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/services.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/services.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/category_products.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/category_products.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/admin.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -120,22 +120,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1766169095337</updated>
-    </task>
-    <task id="LOCAL-00001" summary="start">
-      <option name="closed" value="true" />
-      <created>1766169467789</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1766169467790</updated>
-    </task>
-    <task id="LOCAL-00002" summary="start 2">
-      <option name="closed" value="true" />
-      <created>1766169554570</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1766169554570</updated>
     </task>
     <task id="LOCAL-00003" summary="startproject">
       <option name="closed" value="true" />
@@ -497,7 +481,39 @@
       <option name="project" value="LOCAL" />
       <updated>1770629363415</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="ready">
+      <option name="closed" value="true" />
+      <created>1770715748569</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1770715748569</updated>
+    </task>
+    <task id="LOCAL-00049" summary="redis_settings">
+      <option name="closed" value="true" />
+      <created>1771233572781</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1771233572782</updated>
+    </task>
+    <task id="LOCAL-00050" summary="product_service">
+      <option name="closed" value="true" />
+      <created>1771237278435</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1771237278436</updated>
+    </task>
+    <task id="LOCAL-00051" summary="product_category_html">
+      <option name="closed" value="true" />
+      <created>1771242720133</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1771242720133</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -527,10 +543,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="product_create" />
-    <MESSAGE value="limit offset" />
-    <MESSAGE value="product_forms" />
-    <MESSAGE value="product_forms update" />
     <MESSAGE value="product_forms delete" />
     <MESSAGE value="contacts" />
     <MESSAGE value="product_views_counter" />
@@ -552,6 +564,10 @@
     <MESSAGE value="setup_groups" />
     <MESSAGE value="perms_in_views_and_templates" />
     <MESSAGE value="python_3_12_repair" />
-    <option name="LAST_COMMIT_MESSAGE" value="python_3_12_repair" />
+    <MESSAGE value="ready" />
+    <MESSAGE value="redis_settings" />
+    <MESSAGE value="product_service" />
+    <MESSAGE value="product_category_html" />
+    <option name="LAST_COMMIT_MESSAGE" value="product_category_html" />
   </component>
 </project>
