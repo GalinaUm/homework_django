@@ -9,6 +9,7 @@ from .forms import ProductForm, CategoryForm
 
 
 from catalog.models import Product, Category, Contact
+from .services import ProductService
 
 
 class HomeView(TemplateView):
@@ -38,6 +39,9 @@ class ContactView(TemplateView):
 
 class ProductListView(ListView):
     model = Product
+
+    def get_queryset(self):
+        return ProductService.get_products_from_caches()
 
 
 class ProductDetailView(LoginRequiredMixin, DetailView):
