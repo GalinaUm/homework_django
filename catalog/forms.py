@@ -1,3 +1,4 @@
+from django import forms
 from django.forms import ModelForm
 
 from catalog.models import Product, Category
@@ -12,7 +13,7 @@ class CategoryForm(ModelForm):
 class ProductForm(ModelForm):
     class Meta:
         model = Product
-        exclude = ('views_counter',)
+        exclude = ('views_counter', 'status')
 
     def __init__(self, *args, **kwargs):
         super(ProductForm, self).__init__(*args, **kwargs)
@@ -45,9 +46,9 @@ class ProductForm(ModelForm):
     def clean(self):
         ban_words = ["казино", "биржа", "обман", "криптовалюта", "дешево",
                      "полиция", "крипта", "бесплатно", "радар"]
-        cleaned_date = super().clean()
-        name = cleaned_date.get("name")
-        description = cleaned_date.get("description")
+        cleaned_data = super().clean()
+        name = cleaned_data.get("name")
+        description = cleaned_data.get("description")
 
         if any(word in name.lower() for word in ban_words):
             self.add_error("name", "Использованы запрещённые слова")
@@ -55,9 +56,11 @@ class ProductForm(ModelForm):
         if any(word in description.lower() for word in ban_words):
             self.add_error("description", "Использованы запрещённые слова")
 
+        return cleaned_data
+
     def clean_purchase_price(self):
-        cleaned_data = super().clean()
-        purchase_price = cleaned_data.get('purchase_price')
-        if purchase_price < 0:
-            self.add_error('purchase_price', 'Неправильная цена')
+        purchase_price = self.cleaned_data.get('purchase_price')
+        if purchase_price is not None and purchase_price < 0:
+            raise forms.ValidationError('Цена не может быть отрицательной')
+        return purchase_price
 

@@ -1,4 +1,5 @@
 from django.db import models
+from django.conf import settings
 
 class Category(models.Model):
     name = models.CharField(max_length=100, verbose_name="Наименование",)
@@ -16,7 +17,21 @@ class Category(models.Model):
 
 
 class Product(models.Model):
+
+    DRAFT = 'draft'
+    PUBLISHED = 'published'
+
+    STATUS_CHOICES = [
+        (DRAFT, 'Черновик'),
+        (PUBLISHED, 'Опубликован')
+    ]
+
     name = models.CharField(max_length=150, verbose_name="Наименование",)
+    status = models.CharField(
+        max_length=30,
+        choices=STATUS_CHOICES,
+        default=DRAFT
+    )
     description = models.TextField(
         verbose_name="Описание", blank=True, null=True,
     )
@@ -26,7 +41,13 @@ class Product(models.Model):
         null=True,
         verbose_name="Изображение",
     )
-    category = models.ForeignKey(Category, on_delete=models.CASCADE, verbose_name="Категория", related_name="products")
+    category = models.ForeignKey(
+        Category,
+        on_delete=models.CASCADE,
+        verbose_name="Категория",
+        related_name="products",
+        blank=True,
+        null=True)
     purchase_price = models.DecimalField(
         max_digits=10, decimal_places=2, verbose_name="Цена за покупку",
     )
@@ -37,11 +58,21 @@ class Product(models.Model):
         verbose_name="Счетчик просмотров",
         default=0
     )
+    owner = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.SET_NULL,
+        verbose_name='Владелец',
+        blank=True,
+        null=True
+    )
 
     class Meta:
         verbose_name = "Продукт"
         verbose_name_plural = "Продукты"
         ordering = ["category", "name"]
+        permissions = [
+            ('can_unpublish_product', 'Can unpublish product'),
+        ]
 
     def __str__(self):
         return self.name
